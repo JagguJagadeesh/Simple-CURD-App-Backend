@@ -24,8 +24,8 @@ mongoose.connect(process.env.URL)
         })
         console.log('DataBase is Connected..');
     })
-    .catch(()=>{
-        console.log('Connection Failed..');
+    .catch((error)=>{
+        console.log(error);
         
     })
 
